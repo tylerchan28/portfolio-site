@@ -1,13 +1,21 @@
 import React from "react";
-import Content from "./components/Content";
-import Header from "./components/Header";
-import "./App.css";
+import AboutMe from "./components/AboutMe";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
+import Sidebar from "./components/Sidebar";
+import Skills from "./components/Skills";
+import "../src/styles/styles.scss";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Content />
+      <Sidebar />
+      <div>
+        <AboutMe />
+        <Projects />
+        <Skills />
+        <Education />
+      </div>
     </div>
   );
 }

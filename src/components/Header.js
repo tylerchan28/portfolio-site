@@ -15,10 +15,10 @@ const Header = () => {
                 Tyler Chan
             </div>
             <div className="header-navbar">
-                <a href="https://github.com/tylerchan28" target="_blank" rel="noopener noreferrer" className="header-item">
+                <a href="https://www.linkedin.com/in/tylerchan28/" target="_blank" rel="noopener noreferrer" className="header-item">
                     <img className="navbar-image" src={LinkedInLogo} alt="LinkedIn logo" />
                 </a>
-                <a href="https://www.linkedin.com/in/tylerchan28/" target="_blank" rel="noopener noreferrer" className="header-item">
+                <a href="https://github.com/tylerchan28" target="_blank" rel="noopener noreferrer" className="header-item">
                     <img className="navbar-image" src={GitHubLogo} alt="GitHub Logo" />
                 </a>
                 <button className="email" onClick={sendEmail}>

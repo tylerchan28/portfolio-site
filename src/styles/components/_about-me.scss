@@ -1,0 +1,21 @@
+.about-me__about {
+    padding-bottom: 50px;
+    width: 50%;
+}
+.about-me__container {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    line-height: 2;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.about-me__picture {
+    border-radius: 50%;
+    height: 300px;
+    margin: 30px auto;
+    width: 300px;
+}
