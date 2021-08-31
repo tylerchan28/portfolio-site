@@ -6,6 +6,11 @@
     font-family: "narrow-bold";
     src: local("narrow-bold"), url("../fonts/MullerNarrow-ExtraBold.otf");
 }
+
+@font-face {
+    font-family: "avenir";
+    src: local("avenir"), url("../fonts/AvenirNextLTPro-Regular.otf");
+}
 a {
     color: white;
     text-decoration: none;

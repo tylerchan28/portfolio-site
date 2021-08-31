@@ -3,8 +3,10 @@
 }
 
 .project__description {
-    font-size: 18px;
     color: $light-grey;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
 }
 .project__title {
     font-size: 24px;

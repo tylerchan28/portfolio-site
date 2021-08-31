@@ -3,7 +3,7 @@ import Picture from "./images/me.jpg";
 import Container from "@material-ui/core/Container";
 
 const AboutMe = () => (
-    <Container maxWidth="false">
+    <Container maxWidth={false}>
         <div className="section-container section-container--about">
             <img src={Picture} className="about-me__picture" alt="Me sitting on a tree" id="about-me" />
             <h1>About Me</h1>
