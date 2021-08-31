@@ -1,0 +1,17 @@
+.education__date {
+    color: $light-grey;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.education__info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education__subsection {
+    color: $light-grey;
+    font-size: 18px;
+}

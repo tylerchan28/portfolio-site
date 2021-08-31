@@ -1,0 +1,10 @@
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10vw;
+}
+
+.skills__subsection {
+    color: $light-grey;
+    font-size: 24px;
+}

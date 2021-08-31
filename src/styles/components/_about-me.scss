@@ -1,21 +1,28 @@
 .about-me__about {
     padding-bottom: 50px;
-    width: 50%;
+    width: 90%;
 }
 .about-me__container {
-    align-items: center;
+    align-items: left;
     background-color: white;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     font-size: 22px;
     line-height: 2;
+    margin-left: 15vw;
     padding-top: 30px;
-    width: 100%;
+    width: 75vw;
 }
 
 .about-me__picture {
+    border: 1px solid #8996ac;
     border-radius: 50%;
     height: 300px;
-    margin: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 300px;
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
 }
