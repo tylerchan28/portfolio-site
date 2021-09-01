@@ -25,12 +25,12 @@ const Projects = () => {
             <div className="section-container">  
                 <h1 id="projects">Projects</h1>
                 <div className="project__container">
-                    <div className="project__title">Boba Guide</div>
+                    <div className="project__title">Boba Guide <span className="project__technologies">React, Javascript, HTML/CSS/SCSS, Node, Express, MongoDB/Mongoose</span></div>
                     <div className="project__description">A specialized review site for the top 50 boba shops in major cities providing community sourced feedback to help users decide where to get their next drink.</div>
-                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px" }} onClick={() => showBobaCarousel(!bobaCarousel)} variant="contained" color="secondary">Toggle Show</Button>
+                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px" }} onClick={() => showBobaCarousel(!bobaCarousel)} variant="contained" color="secondary">Show</Button>
                     { 
                         bobaCarousel === true && 
-                        <Carousel className="carousel__slideshow">
+                        <Carousel className="carousel__slideshow" infiniteLoop={true}>
                             <div>
                                 <p className="legend">Login page.</p>
                                 <img className="carousel__image" src={Boba4} alt="Boba guide login page."/>
@@ -52,12 +52,12 @@ const Projects = () => {
                 </div>
 
                 <div className="project__container">
-                    <div className="project__title">Firebase Blogging Site</div>
+                    <div className="project__title">Firebase Blogging Site <span className="project__technologies">React, Redux, Javascript, HTML/CSS/SCSS, Firebase</span></div>
                     <div className="project__description">A responsive blogging site where users can make posts and discuss in a comment section.</div>
-                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBlogCarousel(!blogCarousel)} variant="contained" color="primary">Toggle Show</Button>
+                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBlogCarousel(!blogCarousel)} variant="contained" color="primary">Show</Button>
                     { 
                         blogCarousel && 
-                        <Carousel className="carousel__slideshow"> 
+                        <Carousel className="carousel__slideshow" infiniteLoop={true}> 
                             <div>
                                 <p className="legend">Login page.</p>
                                 <img className="carousel__image" src={Blog3} alt="Login page of blogging site." />
@@ -76,12 +76,12 @@ const Projects = () => {
                 </div>
 
                 <div className="project__container">
-                    <div className="project__title">Budgeting App</div>
+                    <div className="project__title">Budgeting App <span className="project__technologies">React, Redux, Javascript, HTML/CSS/SCSS, Firebase, Jest</span></div>
                     <div className="project__description">A budgeting application that allows users to create, edit, and track their personal expenses.</div>
-                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBudgetCarousel(!budgetCarousel)} variant="contained" color="secondary">Toggle Show</Button>
+                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBudgetCarousel(!budgetCarousel)} variant="contained" color="secondary">Show</Button>
                     { 
                         budgetCarousel && 
-                        <Carousel className="carousel__slideshow"> 
+                        <Carousel className="carousel__slideshow" infiniteLoop={true}> 
                             <div>
                                 <p className="legend">Dashboard page.</p>
                                 <img className="carousel__image" src={Budget1} alt="Dashboard page of budgeting website." />

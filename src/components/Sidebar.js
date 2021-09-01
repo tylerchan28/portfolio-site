@@ -1,9 +1,11 @@
 import React from "react";
 import Drawer from "@material-ui/core/Drawer";
+import Tooltip from "@material-ui/core/Tooltip";
 import { makeStyles } from '@material-ui/core/styles';
 import EmailLogo from "./images/email-logo-png-1111.png";
 import LinkedInLogo from "./images/linkedin_black_logo_icon_147114.png";
 import GitHubLogo from "./images/GitHub-Mark-64px.png";
+
 
 const Sidebar = () => {
 
@@ -33,15 +35,21 @@ const Sidebar = () => {
                 <a href="#education" className="sidebar__item">Education</a>
 
                 <div className="sidebar__button-container">
-                    <a href="https://www.linkedin.com/in/tylerchan28/" target="_blank" rel="noopener noreferrer" className="sidebar__button">
-                        <img className="sidebar__image" src={LinkedInLogo} alt="LinkedIn logo" />
-                    </a>
-                    <a href="https://github.com/tylerchan28" target="_blank" rel="noopener noreferrer" className="sidebar__button">
-                        <img className="sidebar__image" src={GitHubLogo} alt="GitHub Logo" />
-                    </a>
-                    <button className="sidebar__button" onClick={sendEmail}>
-                        <img className="sidebar__image" src={EmailLogo} alt="Email Logo" />
-                    </button>
+                    <Tooltip title="LinkedIn" arrow={true} placement="right">
+                        <a href="https://www.linkedin.com/in/tylerchan28/" target="_blank" rel="noopener noreferrer" className="sidebar__button">
+                            <img className="sidebar__image" src={LinkedInLogo} alt="LinkedIn logo" />
+                        </a>
+                    </Tooltip>
+                    <Tooltip title="Github" arrow={true} placement="right">
+                        <a href="https://github.com/tylerchan28" target="_blank" rel="noopener noreferrer" className="sidebar__button">
+                            <img className="sidebar__image" src={GitHubLogo} alt="GitHub Logo" />
+                        </a>
+                    </Tooltip>
+                    <Tooltip title="Email" arrow={true} placement="right">
+                        <button className="sidebar__button" onClick={sendEmail}>
+                            <img className="sidebar__image" src={EmailLogo} alt="Email Logo" />
+                        </button>
+                    </Tooltip>
                 </div>
             </div>
         </Drawer>
