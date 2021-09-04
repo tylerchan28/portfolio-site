@@ -8,21 +8,20 @@ const Skills = () => (
             <div className="skills__list">
                 <div>
                     <h2 className="skills__subsection">Languages</h2>
-                    <li>Javascript</li>
-                    <li>Python</li>
+                    <div className="skills__technologies">
+                        <li>Javascript, Python</li>
+                    </div>
                 </div>
-                <div>
+                <div className="skills_techonologies-container">
                     <h2 className="skills__subsection">Technologies</h2>
-                    <li>HTML/CSS/SASS</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>Node</li>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>REST</li>
-                    <li>SQL</li>
-                    <li>git</li>
-                    <li>Jest</li>
+                    <div className="skills__technologies">
+                        <div className="skills__stack">Front-End</div>
+                        <li>React, Redux, HTML/CSS/SASS, git, Jest</li>
+                    </div>
+                    <div className="skills__technologies">
+                        <div className="skills__stack">Back-End</div>
+                        <li>Node, MongoDB, Express, REST, SQL</li>
+                    </div>
                 </div>
             </div>
         </div>

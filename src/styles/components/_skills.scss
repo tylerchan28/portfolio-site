@@ -1,10 +1,14 @@
 .skills__list {
     display: flex;
-    flex-direction: row;
-    grid-gap: 10vw;
+    flex-direction: column;
 }
 
 .skills__subsection {
     color: $light-grey;
     font-size: 24px;
+}
+
+.skills__stack {
+    font-size: 22px;
+    margin-left: 2vw;
 }
