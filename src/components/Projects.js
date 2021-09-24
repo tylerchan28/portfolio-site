@@ -10,6 +10,7 @@ import Boba1 from "./images/boba1.jpg";
 import Boba2 from "./images/boba2.png";
 import Boba3 from "./images/boba3.png";
 import Boba4 from "./images/boba4.jpg";
+import Boba5 from "./images/boba5.png";
 import Budget1 from "./images/budget1.png";
 import Budget2 from "./images/budget2.png";
 import Budget3 from "./images/budget3.png";
@@ -27,34 +28,45 @@ const Projects = () => {
                 <div className="project__container">
                     <div className="project__title">Boba Guide <span className="project__technologies">React, Javascript, HTML/CSS/SCSS, Node, Express, MongoDB/Mongoose</span></div>
                     <div className="project__description">A specialized review site for the top 50 boba shops in major cities providing community sourced feedback to help users decide where to get their next drink.</div>
-                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px" }} onClick={() => showBobaCarousel(!bobaCarousel)} variant="contained" color="secondary">Show</Button>
+                    <div className="project__button-container">
+                        <Button style={{ backgroundColor: "#8996ac", marginTop: "10px" }} onClick={() => showBobaCarousel(!bobaCarousel)} variant="contained" color="secondary">Show images</Button>
+                        <Button style={{ backgroundColor: "#8996ac", marginTop: "10px", boxShadow: "1px 1px 5px gray" }}><a className="project__link" href="https://boba-guide-tyler.herokuapp.com/">Live Link</a></Button>
+                    </div>
                     { 
                         bobaCarousel === true && 
                         <Carousel className="carousel__slideshow" infiniteLoop={true}>
                             <div>
-                                <p className="legend">Login page.</p>
+                                <p className="legend">Login Page</p>
                                 <img className="carousel__image" src={Boba4} alt="Boba guide login page."/>
                             </div> 
                             <div>
-                                <p className="legend">City page.</p>
+                                <p className="legend">City Page</p>
                                 <img className="carousel__image" src={Boba1} alt="City page of boba guide."/>
                             </div>
                             <div>
-                                <p className="legend">List of shops in a given city.</p>
-                                <img className="carousel__image" src={Boba2} alt="Shop list of boba guide."/>
+                                <p className="legend">City Page Pt 2</p>
+                                <img className="carousel__image" src={Boba2} alt="Second half of the city page."/>
                             </div>
                             <div>
-                                <p className="legend">Review page.</p>
-                                <img className="carousel__image" src={Boba3} alt="Review page of boba guide."/>
+                                <p className="legend">Restaurant List</p>
+                                <img className="carousel__image" src={Boba3} alt="Shop list of boba guide."/>
+                            </div>
+                            <div>
+                                <p className="legend">Review Page</p>
+                                <img className="carousel__image" src={Boba5} alt="Review page of boba guide."/>
                             </div>
                         </Carousel>
                     }
+
                 </div>
 
                 <div className="project__container">
                     <div className="project__title">Firebase Blogging Site <span className="project__technologies">React, Redux, Javascript, HTML/CSS/SCSS, Firebase</span></div>
                     <div className="project__description">A responsive blogging site where users can make posts and discuss in a comment section.</div>
-                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBlogCarousel(!blogCarousel)} variant="contained" color="primary">Show</Button>
+                    <div className="project__button-container">
+                        <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBlogCarousel(!blogCarousel)} variant="contained" color="primary">Show images</Button>
+                        <Button style={{ backgroundColor: "#8996ac", marginTop: "10px", boxShadow: "1px 1px 5px gray" }}><a className="project__link" href="https://blogging-app-tyler.herokuapp.com/">Live Link</a></Button>
+                    </div>
                     { 
                         blogCarousel && 
                         <Carousel className="carousel__slideshow" infiniteLoop={true}> 
@@ -78,7 +90,10 @@ const Projects = () => {
                 <div className="project__container">
                     <div className="project__title">Budgeting App <span className="project__technologies">React, Redux, Javascript, HTML/CSS/SCSS, Firebase, Jest</span></div>
                     <div className="project__description">A budgeting application that allows users to create, edit, and track their personal expenses.</div>
-                    <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBudgetCarousel(!budgetCarousel)} variant="contained" color="secondary">Show</Button>
+                    <div className="project__button-container">
+                        <Button style={{ backgroundColor: "#8996ac", marginTop: "10px"}} onClick={() => showBudgetCarousel(!budgetCarousel)} variant="contained" color="secondary">Show images</Button>
+                        <Button style={{ backgroundColor: "#8996ac", marginTop: "10px", boxShadow: "1px 1px 5px gray" }}><a className="project__link" href="https://budget-application-tyler.herokuapp.com/">Live Link</a></Button>
+                    </div>
                     { 
                         budgetCarousel && 
                         <Carousel className="carousel__slideshow" infiniteLoop={true}> 
